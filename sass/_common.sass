@@ -1,0 +1,73 @@
+@mixin font-sans($size,$weight)
+  font-family: 'PT Sans', sans-serif
+  font-weight: $weight
+  font-size: $size
+  color: #fff
+
+.container
+  max-width: 1170px
+  margin: 0 auto
+  padding:  0 5px
+  position: relative
+
+.clearfix
+  &:after
+    content: ''
+    display: table
+    clear: both
+.wrap
+  overflow: hidden
+  background: url("../images/pic/background/bg.png") center no-repeat
+  background-size: cover
+
+table
+  border-collapse: separate
+  border-left: 0
+  border-radius: 6px
+  border-spacing: 0px
+
+thead
+  display: table-header-group
+  vertical-align: middle
+  border-color: inherit
+  border-collapse: separate
+
+tr
+  display: table-row
+  vertical-align: inherit
+  border-color: inherit
+
+th
+  text-align: center
+  vertical-align: middle
+
+td
+  text-align: center
+  vertical-align: middle
+
+
+.border_top_right
+  border-radius: 0 6px 0 0
+
+.border__butn__left
+  border-radius: 0 0 6px 0
+.border__butn__right
+  border-radius: 0 0 0 6px
+.border_top_left
+  border-radius: 6px 0 0 0
+.border_top
+  border-radius: 6px 6px 0 0
+textarea,
+textarea:active,
+textarea:focus
+  outline: none
+  resize: none
+
+button,
+button:active,
+button:focus
+  outline: none
+  border: none
+
+
+
