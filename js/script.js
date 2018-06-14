@@ -22,6 +22,8 @@ $('#excursion').click(function () {
 $('#car').click(function () {
     $('#tours,#living,#excursion,#car').removeClass('activeBtnOffer');
     $(this).addClass('activeBtnOffer');
+
+
 });
 
 
@@ -80,4 +82,52 @@ $(document).ready( function () {
 $('.form_tours__search__btn').click(function () {
     $('.form_tours__search__btn__img').toggleClass('is-rotate');
     $('.form_tours__more_form').toggleClass('heightAuto')
+});
+
+
+$(document).ready(function(){
+
+    $('#tours').click(function(){
+        $.ajax({
+            url: " ./form_tours.html",
+            cache: false,
+            success: function(html){
+                $("#content").html(html);
+            }
+        });
+    });
+
+    $('#living').click(function(){
+        $.ajax({
+            url: "./form_living.html",
+            cache: false,
+            success: function(html){
+                $("#content").html(html);
+            }
+        });
+    });
+    $('#excursion').click(function(){
+        $.ajax({
+            url: "./form_excursion.html",
+            cache: false,
+            success: function(html){
+                $("#content").html(html);
+            }
+        });
+    });
+    $('#car').click(function(){
+        $.ajax({
+            url: "./form_car.html",
+            cache: false,
+            success: function(html){
+                $("#content").html(html);
+            }
+        });
+    });
+
+});
+
+$('.section_header__burger').click(function () {
+    $('.section_header__burger').toggleClass('activeBurger');
+    $('.section_header__menu').toggleClass('hiddenMenu');
 });

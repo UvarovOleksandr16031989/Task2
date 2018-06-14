@@ -55,6 +55,8 @@ select
   flex-direction: row
   justify-content: space-around
   position: relative
+.form_tours__form__box_select__select--img_box
+  position: relative
   &::after
     content: ''
     background-image:  url("../images/pic/icon/calendar.png")
@@ -70,6 +72,8 @@ select
   @extend  .form_tours__form__box_select__select
   display: inline-block
   vertical-align: top
+  text-align: center
+  padding: 0
 
 .form_tours__form__box_select__box_range__renge
   vertical-align: middle
@@ -178,14 +182,14 @@ select
   justify-content: space-around
   height: 0
   overflow: hidden
-  transition: all .5s ease
+
 
 .is-rotate
   position: relative
   transform: rotate(180deg)
 
 .heightAuto
-  height: 307px
+  height: 100%
 
 .form_tours__more_form__table__td--bottom
   padding-bottom: 28px
@@ -204,6 +208,18 @@ select
   margin: 0 auto
   display: block
   margin-top: 20px
+
+.form_tours__form__box_select__select--img_box
+  position: relative
+
+.form_tours__form__box_select__select--red
+  background-color: rgba(red , .75)
+
+.form_tours__form__box_select__select--green
+  background-color: rgba(green , .75)
+
+.form_tours__form__box_select__select--blue
+  background-color: rgba(blue , .75)
 
 
 
